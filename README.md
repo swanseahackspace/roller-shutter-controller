@@ -11,6 +11,12 @@ Roller Shutter RFID Access Control PCB. Uses an ESP-32-C3 (Lolin C3 Mini)
 
 # Hardware
 
+#### Enclosure
+The PCB has been designed to fit into ide EL161 enclosure.
+
+- [Technical Drawing](hardware/enclosure-dimensions.pdf)
+- [Product Page](https://ide.es/eng/products/junction-boxes-and-mechanisms/ip65-ip67-junction-boxes/ref_EL161)
+
 #### KiCad Renders
 ![Top down 3D view](hardware/renders/3D-Top.png)
 ![Bottom up 3D View](hardware/renders/3D-Bottom.png)
