@@ -1,0 +1,6 @@
+(sym_lib_table
+  (lib (name "Custom")(type "KiCad")(uri "${KIPRJMOD}/custom-parts/esp32-c3-mini-1.kicad_sym")(options "")(descr ""))
+  (lib (name "TBP03R1-350-04BE")(type "Legacy")(uri "${KIPRJMOD}/custom-parts/TBP03R1-350-04BE/TBP03R1-350-04BE.lib")(options "")(descr ""))
+  (lib (name "TBP03R1-350-06BE")(type "Legacy")(uri "${KIPRJMOD}/custom-parts/TBP03R1-350-06BE/TBP03R1-350-06BE.lib")(options "")(descr ""))
+  (lib (name "TBP03R1-350-10BE")(type "Legacy")(uri "${KIPRJMOD}/custom-parts/TBP03R1-350-10BE/TBP03R1-350-10BE.lib")(options "")(descr ""))
+)

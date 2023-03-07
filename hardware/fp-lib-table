@@ -1,0 +1,7 @@
+(fp_lib_table
+  (lib (name "Custom")(type "KiCad")(uri "${KIPRJMOD}/custom-parts")(options "")(descr ""))
+  (lib (name "Lolin C3 Mini")(type "KiCad")(uri "${KIPRJMOD}/custom-parts/Lolin C3 Mini")(options "")(descr ""))
+  (lib (name "TBP03R2-350-03BE")(type "KiCad")(uri "${KIPRJMOD}/custom-parts/TBP03R2-350-03BE")(options "")(descr ""))
+  (lib (name "TBP03R2-350-04BE")(type "KiCad")(uri "${KIPRJMOD}/custom-parts/TBP03R2-350-04BE")(options "")(descr ""))
+  (lib (name "TBP03R2-350-10BE")(type "KiCad")(uri "${KIPRJMOD}/custom-parts/TBP03R2-350-10BE")(options "")(descr ""))
+)
