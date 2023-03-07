@@ -1,0 +1,3 @@
+[submodule "software/doorlock"]
+	path = software/doorlock
+	url = https://github.com/swanseahackspace/doorlock
