@@ -1,3 +1,4 @@
 [submodule "software/doorlock"]
 	path = software/doorlock
 	url = https://github.com/pe5er/doorlock
+    branch = esp32-c3
