@@ -9972,7 +9972,7 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "Roller Shutter RFID Access\nJan 2023 Rev. B"
+	(gr_text "Roller Shutter RFID Access\nDec 2025 Rev. C"
 		(at 150.96 133.858 0)
 		(layer "F.SilkS" knockout)
 		(uuid "df673b17-51e4-4e09-ae7e-6008a9a5e5c3")
