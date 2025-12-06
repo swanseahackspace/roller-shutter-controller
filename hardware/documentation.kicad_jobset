@@ -1,0 +1,42 @@
+{
+  "jobs": [
+    {
+      "description": "",
+      "id": "199b030a-1563-4b0f-ab13-9513f62c43be",
+      "settings": {
+        "black_and_white": false,
+        "color_theme": "KiCad Classic",
+        "description": "",
+        "drawing_sheet": "",
+        "format": "pdf",
+        "hpgl_page_size": "default",
+        "hpgl_pen_size": 1.016,
+        "hpgl_plot_origin": "A3",
+        "min_pen_width": 847,
+        "output_dir": "schematics",
+        "page_size": "auto",
+        "pdf_hierarchical_links": true,
+        "pdf_metadata": true,
+        "pdf_property_popups": true,
+        "plot_all": true,
+        "plot_drawing_sheet": true,
+        "use_background_color": true
+      },
+      "type": "sch_export_plot_pdf"
+    }
+  ],
+  "meta": {
+    "version": 1
+  },
+  "outputs": [
+    {
+      "description": "",
+      "id": "e39e2b4e-dbbd-4656-94f8-f0ee9c69ca8b",
+      "only": [],
+      "settings": {
+        "output_path": "documentation"
+      },
+      "type": "folder"
+    }
+  ]
+}
