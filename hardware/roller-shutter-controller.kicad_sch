@@ -1566,6 +1566,167 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:Buzzer"
+			(pin_names
+				(offset 0.0254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "BZ"
+				(at 3.81 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Buzzer"
+				(at 3.81 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at -0.635 2.54 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at -0.635 2.54 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Buzzer, polarized"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "quartz resonator ceramic"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*Buzzer*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Buzzer_0_1"
+				(polyline
+					(pts
+						(xy -1.651 1.905) (xy -1.143 1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.397 2.159) (xy -1.397 1.651)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 3.175)
+					(mid 3.1612 0)
+					(end 0 -3.175)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 3.175) (xy 0 -3.175)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Buzzer_1_1"
+				(pin passive line
+					(at -2.54 2.54 0)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 -2.54 0)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:LED"
 			(pin_numbers
 				(hide yes)
@@ -2853,6 +3014,238 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Sensor_Current:ACS724xLCTR-05AB"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 2.54 11.43 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "ACS724xLCTR-05AB"
+				(at 2.54 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+				(at 2.54 -8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.allegromicro.com/~/media/Files/Datasheets/ACS724-Datasheet.ashx?la=en"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "±5A Bidirectional Hall-Effect Current Sensor, +5.0V supply, 400mV/A, SOIC-8"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "hall effect current monitor sensor isolated"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOIC*3.9x4.9m*P1.27mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "ACS724xLCTR-05AB_0_1"
+				(rectangle
+					(start -7.62 7.62)
+					(end 7.62 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "ACS724xLCTR-05AB_1_1"
+				(pin passive line
+					(at -10.16 5.08 0)
+					(length 2.54)
+					(name "IP+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 5.08 0)
+					(length 2.54)
+					(hide yes)
+					(name "IP+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -5.08 0)
+					(length 2.54)
+					(name "IP-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -5.08 0)
+					(length 2.54)
+					(hide yes)
+					(name "IP-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 10.16 270)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -10.16 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "VIOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 -2.54 180)
+					(length 2.54)
+					(name "FILTER"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Transistor_FET:BSS138"
 			(pin_names
 				(offset 0)
@@ -3868,9 +4261,9 @@
 		)
 		(uuid "0f845097-aa70-4cd5-b68c-f23bc2a74488")
 	)
-	(text "TODO: current sensor, humidity sensor"
+	(text "TODO: current sensor, buzzer ACS724LLCTR-05AB-T, humidity sensor, RFID reader buzzer"
 		(exclude_from_sim no)
-		(at 68.072 50.292 0)
+		(at -3.81 206.502 0)
 		(effects
 			(font
 				(size 5.08 5.08)
@@ -4259,6 +4652,16 @@
 	)
 	(wire
 		(pts
+			(xy 180.34 27.94) (xy 160.02 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "205ab1ee-6040-4b4a-baac-dfeb4f3aaa1c")
+	)
+	(wire
+		(pts
 			(xy 38.1 152.4) (xy 40.64 152.4)
 		)
 		(stroke
@@ -4346,6 +4749,16 @@
 			(type default)
 		)
 		(uuid "2e988a5d-bba8-44ca-8b0a-c06568b388f5")
+	)
+	(wire
+		(pts
+			(xy 180.34 30.48) (xy 180.34 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f31af4e-eedb-4d95-991c-463f2f496ce8")
 	)
 	(polyline
 		(pts
@@ -5698,7 +6111,7 @@
 				(hide yes)
 			)
 		)
-		(property "SPN" "2223-TBP03R1-350-04BE-ND"
+		(property "DigiKey" "2223-TBP03R1-350-04BE-ND"
 			(at 33.02 38.1 0)
 			(effects
 				(font
@@ -5867,7 +6280,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field7" "541-4064-1-ND"
+		(property "DigiKey" "541-4064-1-ND"
 			(at 182.88 95.25 0)
 			(effects
 				(font
@@ -5962,7 +6375,7 @@
 				(hide yes)
 			)
 		)
-		(property "SPN" "399-11042-5-ND"
+		(property "DigiKey" "399-11042-5-ND"
 			(at 229.87 80.01 0)
 			(effects
 				(font
@@ -6080,7 +6493,7 @@
 				(hide yes)
 			)
 		)
-		(property "SPN" "BSS138CT-ND"
+		(property "DigiKey" "BSS138CT-ND"
 			(at 200.66 97.79 0)
 			(effects
 				(font
@@ -6180,7 +6593,7 @@
 				(hide yes)
 			)
 		)
-		(property "SPN" "2223-TBP03R1-350-06BE-ND"
+		(property "DigiKey" "2223-TBP03R1-350-06BE-ND"
 			(at 33.02 157.48 0)
 			(effects
 				(font
@@ -6288,7 +6701,7 @@
 				(hide yes)
 			)
 		)
-		(property "SPN" "2223-TBP03R1-350-10BE-ND"
+		(property "DigiKey" "2223-TBP03R1-350-10BE-ND"
 			(at 33.02 124.46 0)
 			(effects
 				(font
@@ -6331,6 +6744,191 @@
 			(project "roller-shutter-controller"
 				(path "/d14ad722-eb72-4309-a288-adb29648227e"
 					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Sensor_Current:ACS724xLCTR-05AB")
+		(at 240.03 109.22 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5e854235-813e-434f-ad40-60b9820998a7")
+		(property "Reference" "U7"
+			(at 242.1733 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "ACS724xLCTR-05AB SWAP for TMCS1108A3BQDR"
+			(at 242.1733 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 242.57 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.allegromicro.com/~/media/Files/Datasheets/ACS724-Datasheet.ashx?la=en"
+			(at 240.03 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "±5A Bidirectional Hall-Effect Current Sensor, +5.0V supply, 400mV/A, SOIC-8"
+			(at 240.03 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0e964216-d4a3-4482-a340-a8b062105952")
+		)
+		(pin "4"
+			(uuid "daf24754-a36a-45c4-a042-4cd802b3d36f")
+		)
+		(pin "1"
+			(uuid "18811edc-51ac-4baa-8c4d-e0b1f8928cae")
+		)
+		(pin "3"
+			(uuid "710dcefa-dad7-4c9f-bcc6-f059b47ca328")
+		)
+		(pin "7"
+			(uuid "fbaaae2b-3588-44bc-ba54-ebafe5972db5")
+		)
+		(pin "8"
+			(uuid "b321962a-18e6-4ccc-a38e-09785ab597d6")
+		)
+		(pin "6"
+			(uuid "922a1480-2e89-4240-bf2d-c12be5efe344")
+		)
+		(pin "5"
+			(uuid "e39a9ce6-f6e0-4a65-b425-341b572602c2")
+		)
+		(instances
+			(project ""
+				(path "/d14ad722-eb72-4309-a288-adb29648227e"
+					(reference "U7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Buzzer")
+		(at 190.5 22.86 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "62eed2a7-e527-4125-b9fc-2980bf18fef5")
+		(property "Reference" "BZ?"
+			(at 194.31 21.5899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Buzzer CHECK FOOTPRINT, swap for +12V drive model"
+			(at 194.31 24.1299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Buzzer_Beeper:Buzzer_12x9.5RM7.6"
+			(at 189.865 20.32 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 189.865 20.32 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Buzzer, polarized"
+			(at 190.5 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CMI-1295-0585T"
+			(at 203.2 26.162 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Same Sky"
+			(at 190.5 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey" "102-CMI-1295-0585T-ND"
+			(at 190.5 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "57d19fa6-2ec2-46db-96b1-bc3ee60c2546")
+		)
+		(pin "1"
+			(uuid "21c41eab-66a5-4fa1-b1ca-c76d96d4c020")
+		)
+		(instances
+			(project ""
+				(path "/d14ad722-eb72-4309-a288-adb29648227e"
+					(reference "BZ?")
 					(unit 1)
 				)
 			)
@@ -6394,6 +6992,72 @@
 			(project "roller-shutter-controller"
 				(path "/d14ad722-eb72-4309-a288-adb29648227e"
 					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 187.96 35.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "69157199-eadc-484b-9aae-ce3d9f2aac36")
+		(property "Reference" "#PWR049"
+			(at 187.96 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 187.96 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 187.96 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 187.96 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 187.96 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "11ed0eed-bad2-414a-849f-fca0ac3d02fa")
+		)
+		(instances
+			(project "roller-shutter-controller"
+				(path "/d14ad722-eb72-4309-a288-adb29648227e"
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -6475,7 +7139,7 @@
 				(hide yes)
 			)
 		)
-		(property "SPN" "BSS138CT-ND"
+		(property "DigiKey" "BSS138CT-ND"
 			(at 182.88 147.32 0)
 			(effects
 				(font
@@ -6666,7 +7330,7 @@
 				(hide yes)
 			)
 		)
-		(property "SPN" "BSS138CT-ND"
+		(property "DigiKey" "BSS138CT-ND"
 			(at 182.88 127 0)
 			(effects
 				(font
@@ -6827,6 +7491,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 187.96 20.32 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "94503dce-d463-4220-9f68-f4da39017729")
+		(property "Reference" "#PWR048"
+			(at 187.96 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12V"
+			(at 187.96 15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 187.96 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 187.96 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 187.96 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3f5ea345-e9bf-435f-873b-4811da8cfab5")
+		)
+		(instances
+			(project "roller-shutter-controller"
+				(path "/d14ad722-eb72-4309-a288-adb29648227e"
+					(reference "#PWR048")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Diode:1N4007")
 		(at 203.2 80.01 270)
 		(unit 1)
@@ -6897,7 +7627,7 @@
 				(hide yes)
 			)
 		)
-		(property "SPN" "1655-1N4007FLCT-ND"
+		(property "DigiKey" "1655-1N4007FLCT-ND"
 			(at 203.2 80.01 90)
 			(effects
 				(font
@@ -6916,6 +7646,109 @@
 			(project "roller-shutter-controller"
 				(path "/d14ad722-eb72-4309-a288-adb29648227e"
 					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:BSS138")
+		(at 185.42 30.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a4203506-3baa-433a-a931-6e3d4c9af6c2")
+		(property "Reference" "Q?"
+			(at 191.77 29.2099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BSS138"
+			(at 191.77 31.7499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering"
+			(at 190.5 32.385 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF"
+			(at 190.5 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "50V Vds, 0.22A Id, N-Channel MOSFET, SOT-23"
+			(at 185.42 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "BSS138"
+			(at 185.42 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Onsemi"
+			(at 185.42 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey" "BSS138CT-ND"
+			(at 185.42 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "57549e4f-697b-42e7-8a28-77693e721775")
+		)
+		(pin "1"
+			(uuid "5703b8d9-70a2-439f-a595-0a98f3e02572")
+		)
+		(pin "2"
+			(uuid "c4e3bff5-834a-4e8f-b09d-fa32075d83b4")
+		)
+		(instances
+			(project "roller-shutter-controller"
+				(path "/d14ad722-eb72-4309-a288-adb29648227e"
+					(reference "Q?")
 					(unit 1)
 				)
 			)
@@ -7125,7 +7958,7 @@
 				(hide yes)
 			)
 		)
-		(property "SPN" "  2223-TBP03R1-350-04BE-ND"
+		(property "Digikey" "  2223-TBP03R1-350-04BE-ND"
 			(at 33.02 88.9 0)
 			(effects
 				(font
@@ -7553,7 +8386,7 @@
 				(hide yes)
 			)
 		)
-		(property "SPN" "732-4971-1-ND"
+		(property "DigiKey" "732-4971-1-ND"
 			(at 182.88 104.14 90)
 			(effects
 				(font
@@ -7773,8 +8606,8 @@
 		)
 	)
 	(sheet
-		(at 115.57 83.82)
-		(size 44.45 55.88)
+		(at 115.57 25.4)
+		(size 44.45 114.3)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -7789,7 +8622,7 @@
 		)
 		(uuid "393aea06-245d-4826-a279-449666bebdb1")
 		(property "Sheetname" "Microcontroller"
-			(at 115.57 83.1084 0)
+			(at 115.57 24.6884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7872,9 +8705,20 @@
 				(justify right)
 			)
 		)
-		(pin "DATA0" input
-			(at 115.57 119.38 180)
-			(uuid "9efc903a-1ec1-43ed-9afa-125f9ade561f")
+		(pin "BUZZER_INT" output
+			(at 160.02 27.94 0)
+			(uuid "0aed423c-066b-44b4-aa51-1fb8127ce50f")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(color 255 255 255 1)
+				)
+				(justify right)
+			)
+		)
+		(pin "DATA1" bidirectional
+			(at 115.57 121.92 180)
+			(uuid "756ba59b-542e-431e-88ea-6fa9d504ce7d")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7883,9 +8727,9 @@
 				(justify left)
 			)
 		)
-		(pin "DATA1" input
-			(at 115.57 121.92 180)
-			(uuid "f1134d00-c146-4f5f-b9d3-882f20646b14")
+		(pin "DATA0" bidirectional
+			(at 115.57 119.38 180)
+			(uuid "c56cbe8f-0e34-47c5-b62e-87e8d2d1af92")
 			(effects
 				(font
 					(size 1.27 1.27)

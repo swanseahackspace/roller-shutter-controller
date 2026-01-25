@@ -3390,6 +3390,12 @@
 		(uuid "a332f404-da0b-4a0f-9683-02cc80700100")
 	)
 	(junction
+		(at 107.95 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bc6f7f58-0da2-4bed-952b-840a2857bcaf")
+	)
+	(junction
 		(at 81.28 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3461,6 +3467,16 @@
 	)
 	(wire
 		(pts
+			(xy 107.95 104.14) (xy 107.95 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04c97ac6-cdd8-4edd-8150-d5b227f57184")
+	)
+	(wire
+		(pts
 			(xy 154.94 91.44) (xy 234.95 91.44)
 		)
 		(stroke
@@ -3501,6 +3517,16 @@
 	)
 	(wire
 		(pts
+			(xy 101.6 104.14) (xy 107.95 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f1d2904-23a4-400e-9a1f-34454135e70a")
+	)
+	(wire
+		(pts
 			(xy 237.49 93.98) (xy 237.49 96.52)
 		)
 		(stroke
@@ -3528,6 +3554,16 @@
 			(type default)
 		)
 		(uuid "2b18d70e-777a-4518-b388-38e82f6f033b")
+	)
+	(wire
+		(pts
+			(xy 101.6 121.92) (xy 124.46 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3617afa9-8975-438c-8a47-a3ff63d7a644")
 	)
 	(wire
 		(pts
@@ -4184,6 +4220,28 @@
 			(justify right)
 		)
 		(uuid "a5d487e2-0f19-421e-99f8-c5dfbdfb634d")
+	)
+	(hierarchical_label "BUZZER_INT"
+		(shape output)
+		(at 101.6 121.92 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c49d3d1a-3b99-4dec-9a31-920232b84a6c")
+	)
+	(hierarchical_label "LED3"
+		(shape output)
+		(at 101.6 104.14 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e1aba36f-da23-464c-a992-0e21504b2dcb")
 	)
 	(hierarchical_label "ENABLE_RELAY"
 		(shape output)
