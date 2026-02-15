@@ -3281,7 +3281,7 @@
 	)
 	(text "Reset"
 		(exclude_from_sim no)
-		(at 20.066 84.582 0)
+		(at 21.59 77.724 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3289,6 +3289,17 @@
 			(justify right bottom)
 		)
 		(uuid "1458513a-2834-4fbd-90c7-d2675d49b409")
+	)
+	(text "GPIO header?"
+		(exclude_from_sim no)
+		(at 173.228 112.776 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "26a89697-5456-4878-9501-1e925f4f6712")
 	)
 	(text "TODO: add MPN, SPN, Manufacturer to all parts"
 		(exclude_from_sim no)
@@ -3300,6 +3311,17 @@
 			(justify left bottom)
 		)
 		(uuid "3d8122a4-0b34-4667-8d92-db66f43e9d59")
+	)
+	(text "OLED Screen Header"
+		(exclude_from_sim no)
+		(at 36.83 122.174 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "45db104d-ec99-46a7-92af-0e93f7c1532d")
 	)
 	(text "pullups?"
 		(exclude_from_sim no)
@@ -3314,7 +3336,7 @@
 	)
 	(text "Boot Mode"
 		(exclude_from_sim no)
-		(at 64.008 89.662 0)
+		(at 69.596 99.568 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3330,16 +3352,16 @@
 		(uuid "03072e7f-abfc-46c6-9c04-7e2393231a74")
 	)
 	(junction
+		(at 19.05 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "06ba7e5e-4ec5-4642-8350-4356a65951b9")
+	)
+	(junction
 		(at 52.07 78.74)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "193046b3-4603-4a60-a5b1-7d45d477afe3")
-	)
-	(junction
-		(at 25.4 88.9)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "28a574c0-5796-4fa5-b1ba-5761fbc49aae")
 	)
 	(junction
 		(at 234.95 55.88)
@@ -3597,7 +3619,7 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 78.74) (xy 39.37 78.74)
+			(xy 19.05 78.74) (xy 39.37 78.74)
 		)
 		(stroke
 			(width 0)
@@ -3624,16 +3646,6 @@
 			(type default)
 		)
 		(uuid "52dec5b8-9f4b-4cb6-b76e-5324f10a42db")
-	)
-	(wire
-		(pts
-			(xy 39.37 88.9) (xy 25.4 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "532152e9-1613-41b1-93bd-5c87382c5e81")
 	)
 	(wire
 		(pts
@@ -3867,6 +3879,16 @@
 	)
 	(wire
 		(pts
+			(xy 19.05 88.9) (xy 39.37 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9ed48cb-95e6-486b-955b-9c064eac3339")
+	)
+	(wire
+		(pts
 			(xy 237.49 96.52) (xy 240.03 96.52)
 		)
 		(stroke
@@ -4017,7 +4039,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 83.82) (xy 124.46 83.82)
+			(xy 64.77 83.82) (xy 124.46 83.82)
 		)
 		(stroke
 			(width 0)
@@ -5331,7 +5353,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "4e1b1e3a-2f73-47ca-bcce-501fd411b13f")
 		(property "Reference" "J5"
 			(at 38.735 113.03 0)
@@ -5341,8 +5362,8 @@
 				)
 			)
 		)
-		(property "Value" "OLED Display Connector"
-			(at 38.735 115.57 0)
+		(property "Value" "5-146274-4"
+			(at 43.942 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5368,6 +5389,33 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x04, script generated"
+			(at 38.1 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "5-146274-4"
+			(at 38.1 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "TE"
+			(at 38.1 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey" "A122867-ND"
 			(at 38.1 120.65 0)
 			(effects
 				(font
@@ -5619,6 +5667,102 @@
 			(project "roller-shutter-controller"
 				(path "/d14ad722-eb72-4309-a288-adb29648227e/393aea06-245d-4826-a279-449666bebdb1"
 					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 64.77 88.9 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6c26a8bb-fd15-4b35-98e7-dd2032e19ccd")
+		(property "Reference" "SW2"
+			(at 66.04 87.6299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TL3305BF260QG"
+			(at 66.04 90.1699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_TL3305B"
+			(at 59.69 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 59.69 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 64.77 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "TL3305BF260QG"
+			(at 64.77 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "E-Switch"
+			(at 64.77 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey" "EG5354CT-ND"
+			(at 64.77 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6871a31f-9f44-4806-86b7-6bd6cec94bbc")
+		)
+		(pin "2"
+			(uuid "bfacdc05-95d2-48cc-a76b-560462ed8e8a")
+		)
+		(instances
+			(project "roller-shutter-controller"
+				(path "/d14ad722-eb72-4309-a288-adb29648227e/393aea06-245d-4826-a279-449666bebdb1"
+					(reference "SW2")
 					(unit 1)
 				)
 			)
@@ -6189,7 +6333,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 25.4 83.82 90)
+		(at 19.05 83.82 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6197,7 +6341,7 @@
 		(dnp no)
 		(uuid "a338d765-494b-416e-88ac-76ca5d9a941d")
 		(property "Reference" "SW1"
-			(at 26.67 82.5499 90)
+			(at 20.32 82.5499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6205,8 +6349,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "SW_Push"
-			(at 26.67 85.0899 90)
+		(property "Value" "TL3305BF260QG"
+			(at 20.32 85.0899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6214,8 +6358,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 20.32 83.82 0)
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_TL3305B"
+			(at 13.97 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6224,7 +6368,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 20.32 83.82 0)
+			(at 13.97 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6233,7 +6377,34 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 25.4 83.82 0)
+			(at 19.05 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "TL3305BF260QG"
+			(at 19.05 83.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "E-Switch"
+			(at 19.05 83.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey" "EG5354CT-ND"
+			(at 19.05 83.82 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6330,81 +6501,6 @@
 			(project "roller-shutter-controller"
 				(path "/d14ad722-eb72-4309-a288-adb29648227e/393aea06-245d-4826-a279-449666bebdb1"
 					(reference "#PWR027")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 68.58 88.9 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "bfac991f-5b91-4427-b2d7-7046f7b6e323")
-		(property "Reference" "SW2"
-			(at 69.85 87.6299 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "SW_Push"
-			(at 69.85 90.1699 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 63.5 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 63.5 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 68.58 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d870f5d3-1553-4bb4-a47f-ee6a6f6229d2")
-		)
-		(pin "2"
-			(uuid "a47a25d9-5ee0-4a42-9297-bc3c7189a489")
-		)
-		(instances
-			(project "microcontroller"
-				(path "/a99f8651-885d-49d1-a742-1fc46a62c647"
-					(reference "SW?")
-					(unit 1)
-				)
-			)
-			(project "roller-shutter-controller"
-				(path "/d14ad722-eb72-4309-a288-adb29648227e/393aea06-245d-4826-a279-449666bebdb1"
-					(reference "SW2")
 					(unit 1)
 				)
 			)
@@ -6693,7 +6789,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 68.58 93.98 0)
+		(at 64.77 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6702,7 +6798,7 @@
 		(fields_autoplaced yes)
 		(uuid "e1e94051-afc8-4c8b-b5fe-f2dc7ea58294")
 		(property "Reference" "#PWR017"
-			(at 68.58 100.33 0)
+			(at 64.77 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6711,7 +6807,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 68.58 99.06 0)
+			(at 64.77 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6720,7 +6816,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 68.58 93.98 0)
+			(at 64.77 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6729,7 +6825,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 68.58 93.98 0)
+			(at 64.77 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6738,7 +6834,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 68.58 93.98 0)
+			(at 64.77 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6765,7 +6861,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 25.4 88.9 0)
+		(at 19.05 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6774,7 +6870,7 @@
 		(fields_autoplaced yes)
 		(uuid "e96680b7-6a39-4ca4-8b5c-3c244b9225c5")
 		(property "Reference" "#PWR014"
-			(at 25.4 95.25 0)
+			(at 19.05 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6783,7 +6879,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 25.4 93.98 0)
+			(at 19.05 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6792,7 +6888,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 25.4 88.9 0)
+			(at 19.05 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6801,7 +6897,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 25.4 88.9 0)
+			(at 19.05 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6810,7 +6906,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 25.4 88.9 0)
+			(at 19.05 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)

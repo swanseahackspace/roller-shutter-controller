@@ -1869,28 +1869,17 @@
 		)
 		(uuid "43de29e6-84a8-44b1-afde-db756a262666")
 	)
-	(text "TODO: add MPN, SPN, Manufacturer to all parts"
-		(exclude_from_sim no)
-		(at 70.104 28.448 0)
-		(effects
-			(font
-				(size 5.08 5.08)
-			)
-			(justify left bottom)
-		)
-		(uuid "52c15a85-e202-4cb1-94f7-425ef4138164")
-	)
-	(junction
-		(at 121.92 114.3)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0e087476-6049-430f-9f9e-e63fb0a97f3c")
-	)
 	(junction
 		(at 139.7 71.12)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "130a86a4-01aa-4475-a50e-cd88b0cb05ca")
+	)
+	(junction
+		(at 139.7 121.92)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4384d544-29f9-48d0-a8c2-b4d5f4c6bd9c")
 	)
 	(junction
 		(at 121.92 63.5)
@@ -1935,12 +1924,6 @@
 		(uuid "a0637484-fd5b-4be8-86be-6a743ed84aef")
 	)
 	(junction
-		(at 139.7 121.92)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b6c2867f-52fd-427b-bdce-259c03a991b0")
-	)
-	(junction
 		(at 165.1 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1951,6 +1934,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c4e83aaa-6e38-4eed-a938-6ea2795e874d")
+	)
+	(junction
+		(at 121.92 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d6328cb5-c03f-4efd-ab40-9a5c681904cc")
 	)
 	(junction
 		(at 91.44 58.42)
@@ -2050,7 +2039,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 114.3) (xy 119.38 114.3)
+			(xy 119.38 114.3) (xy 121.92 114.3)
 		)
 		(stroke
 			(width 0)
@@ -2130,16 +2119,6 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 114.3) (xy 132.08 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a602054e-7ccb-4d64-859f-1622e948d69c")
-	)
-	(wire
-		(pts
 			(xy 119.38 119.38) (xy 121.92 119.38)
 		)
 		(stroke
@@ -2157,6 +2136,16 @@
 			(type default)
 		)
 		(uuid "c404ef0f-bf2a-4e72-a442-3b65832939f3")
+	)
+	(wire
+		(pts
+			(xy 121.92 114.3) (xy 132.08 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5137afa-6be3-405c-aa83-7349a5a5adcd")
 	)
 	(wire
 		(pts
@@ -2391,76 +2380,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 121.92 111.76 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "09b9731c-6ade-41e0-a57f-d9e6a0afdb82")
-		(property "Reference" "C8"
-			(at 124.46 110.4962 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0.1uF"
-			(at 124.46 113.0362 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 121.92 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 121.92 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 121.92 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4f090046-b5ee-4567-af5e-cf382b11afed")
-		)
-		(pin "2"
-			(uuid "26583f2a-d531-4ad1-8a60-1a100fb1da3c")
-		)
-		(instances
-			(project "roller-shutter-controller"
-				(path "/d14ad722-eb72-4309-a288-adb29648227e/88db0411-a080-4594-8d0e-748b491508cc"
-					(reference "C8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 139.7 74.93 180)
 		(unit 1)
@@ -2512,6 +2431,33 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "CRCW040222K1FKEDC"
+			(at 139.7 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 139.7 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey" "541-4088-1-ND"
+			(at 139.7 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -2590,6 +2536,102 @@
 			(project "roller-shutter-controller"
 				(path "/d14ad722-eb72-4309-a288-adb29648227e/88db0411-a080-4594-8d0e-748b491508cc"
 					(reference "#PWR043")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 139.7 125.73 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0fb33f49-4be8-40ec-9f06-fc0f9253b987")
+		(property "Reference" "R11"
+			(at 142.24 124.4599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "22k1"
+			(at 142.24 126.9999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 141.478 125.73 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 139.7 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 139.7 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CRCW040222K1FKEDC"
+			(at 139.7 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 139.7 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey" "541-4088-1-ND"
+			(at 139.7 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d3c325e1-ae55-41d3-9ad6-3c2c513217ec")
+		)
+		(pin "2"
+			(uuid "455c3d1a-63e2-4017-bf59-eeb6f1602d6d")
+		)
+		(instances
+			(project "roller-shutter-controller"
+				(path "/d14ad722-eb72-4309-a288-adb29648227e/88db0411-a080-4594-8d0e-748b491508cc"
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -2740,6 +2782,15 @@
 				(hide yes)
 			)
 		)
+		(property "DigiKey" "445-5968-1-ND"
+			(at 152.4 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b6c33849-fe03-4021-b9bf-52e91843a0d3")
 		)
@@ -2816,6 +2867,15 @@
 			)
 		)
 		(property "Manufacturer" "Bourns"
+			(at 64.77 58.42 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey" "SF-0603S040-2CT-ND"
 			(at 64.77 58.42 90)
 			(effects
 				(font
@@ -2957,6 +3017,33 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "CRCW040269K8FKEDC"
+			(at 139.7 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 139.7 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey" "541-4089-1-ND"
+			(at 139.7 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -3243,6 +3330,15 @@
 				(hide yes)
 			)
 		)
+		(property "DigiKey" "SRP5030T-100MCT-ND"
+			(at 135.89 114.3 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "572ff617-7f3b-4206-ac92-daac835ee08e")
 		)
@@ -3310,6 +3406,33 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "CRCW0402309KFKED"
+			(at 139.7 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 139.7 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "541-309KLCT-ND"
+			(at 139.7 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -3381,6 +3504,33 @@
 				)
 			)
 		)
+		(property "MPN" "150060GS75000"
+			(at 203.2 127 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Wurth"
+			(at 203.2 127 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey" "732-4971-1-ND"
+			(at 203.2 127 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ab7fe4d9-0f1c-4c5d-87c0-71cb15496565")
 		)
@@ -3448,6 +3598,33 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "CRCW0402220RFKEDC"
+			(at 203.2 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 203.2 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey" "541-4064-1-ND"
+			(at 203.2 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -3537,6 +3714,15 @@
 			)
 		)
 		(property "Manufacturer" "TDK"
+			(at 73.66 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey" "445-5968-1-ND"
 			(at 73.66 62.23 0)
 			(effects
 				(font
@@ -3759,75 +3945,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 139.7 125.73 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "73de6990-2d76-4955-a815-e89e0ec11d67")
-		(property "Reference" "R11"
-			(at 142.24 124.4599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "22k1"
-			(at 142.24 126.9999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 141.478 125.73 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 139.7 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 139.7 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "52edf0af-5b09-4b37-84f6-64637dd683ed")
-		)
-		(pin "2"
-			(uuid "8eb23c7f-2819-4a33-ad33-ab29313f7c12")
-		)
-		(instances
-			(project "roller-shutter-controller"
-				(path "/d14ad722-eb72-4309-a288-adb29648227e/88db0411-a080-4594-8d0e-748b491508cc"
-					(reference "R11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:L_Iron")
 		(at 135.89 63.5 90)
 		(unit 1)
@@ -3890,6 +4007,15 @@
 			)
 		)
 		(property "Manufacturer" "Bourns"
+			(at 135.89 63.5 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey" "SRR1210-330MCT-ND"
 			(at 135.89 63.5 90)
 			(effects
 				(font
@@ -4034,6 +4160,33 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "GCM155R71H104KE02D"
+			(at 121.92 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata"
+			(at 121.92 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey" "490-10672-1-ND"
+			(at 121.92 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "67891a84-af5d-4896-a167-da0ed9de35dc")
 		)
@@ -4160,6 +4313,33 @@
 			)
 		)
 		(property "Description" "Simple Switcher Buck Regulator, Vin=4-36V, Iout=1A, Adjustable output voltage, SOT-23-6 package"
+			(at 106.68 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "LMR50410XFDBVR"
+			(at 106.68 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "TI"
+			(at 106.68 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey" "296-LMR50410XFDBVRCT-ND"
 			(at 106.68 63.5 0)
 			(effects
 				(font
@@ -4590,87 +4770,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Regulator_Switching:LMR50410")
-		(at 106.68 114.3 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e13de0df-e64c-4628-9ca5-38604ce07bd4")
-		(property "Reference" "U6"
-			(at 106.68 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LMR50410"
-			(at 106.68 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6_Handsoldering"
-			(at 106.68 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lmr50410.pdf"
-			(at 96.52 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Simple Switcher Buck Regulator, Vin=4-36V, Iout=1A, Adjustable output voltage, SOT-23-6 package"
-			(at 106.68 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "5"
-			(uuid "33c0405f-acda-4534-b95f-c878a6557b5b")
-		)
-		(pin "1"
-			(uuid "da1796af-3c2d-43f4-abe3-5411f1f6b010")
-		)
-		(pin "3"
-			(uuid "46e1ba7b-7d99-4ede-9431-ca4c7dd95c5f")
-		)
-		(pin "4"
-			(uuid "6170d882-fc4f-46aa-9f1f-12e820ac9e0a")
-		)
-		(pin "2"
-			(uuid "70e77d87-33d6-4b8d-bd49-aa9a8f0bb548")
-		)
-		(pin "6"
-			(uuid "883487bf-a942-4c36-bcb8-8b170e62dc0d")
-		)
-		(instances
-			(project "roller-shutter-controller"
-				(path "/d14ad722-eb72-4309-a288-adb29648227e/88db0411-a080-4594-8d0e-748b491508cc"
-					(reference "U6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+12V")
 		(at 165.1 63.5 0)
 		(mirror y)
@@ -4730,6 +4829,103 @@
 			(project "roller-shutter-controller"
 				(path "/d14ad722-eb72-4309-a288-adb29648227e/88db0411-a080-4594-8d0e-748b491508cc"
 					(reference "#PWR040")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 121.92 111.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e9f4fab5-f92f-4a11-9b29-5186bb7291e7")
+		(property "Reference" "C8"
+			(at 124.46 110.4962 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 124.46 113.0362 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+			(at 121.92 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 121.92 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 121.92 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "GCM155R71H104KE02D"
+			(at 121.92 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata"
+			(at 121.92 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey" "490-10672-1-ND"
+			(at 121.92 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ddc389e4-057f-4784-98a5-75f7c710fc92")
+		)
+		(pin "2"
+			(uuid "7e43d350-71e5-4750-91a5-42d4b7018fa6")
+		)
+		(instances
+			(project "roller-shutter-controller"
+				(path "/d14ad722-eb72-4309-a288-adb29648227e/88db0411-a080-4594-8d0e-748b491508cc"
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -4881,6 +5077,15 @@
 				(hide yes)
 			)
 		)
+		(property "DigiKey" "445-5968-1-ND"
+			(at 81.28 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e0c663f3-540c-4c41-9381-d13c9312f3a5")
 		)
@@ -4963,6 +5168,114 @@
 		)
 	)
 	(symbol
+		(lib_id "Regulator_Switching:LMR50410")
+		(at 106.68 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f781b535-e2f1-4bad-bf50-2fdfc82bb6ce")
+		(property "Reference" "U6"
+			(at 106.68 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LMR50410"
+			(at 106.68 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6_Handsoldering"
+			(at 106.68 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lmr50410.pdf"
+			(at 96.52 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Simple Switcher Buck Regulator, Vin=4-36V, Iout=1A, Adjustable output voltage, SOT-23-6 package"
+			(at 106.68 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "LMR50410XFDBVR"
+			(at 106.68 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "TI"
+			(at 106.68 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey" "296-LMR50410XFDBVRCT-ND"
+			(at 106.68 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "e220d376-5c45-4533-bc6f-b414e2ba82b1")
+		)
+		(pin "1"
+			(uuid "5562ac47-a0a5-4899-b2ce-42d5eb091ae7")
+		)
+		(pin "3"
+			(uuid "d5978c55-ce2d-4c45-a44a-468f7030c99c")
+		)
+		(pin "4"
+			(uuid "ca6ff280-a1b7-49c8-bd42-c26f33537166")
+		)
+		(pin "2"
+			(uuid "c07387ab-6d4e-402f-ab04-218bc9d0fcd7")
+		)
+		(pin "6"
+			(uuid "b5ac1f89-b420-4ce2-a78c-5aefff2091cb")
+		)
+		(instances
+			(project "roller-shutter-controller"
+				(path "/d14ad722-eb72-4309-a288-adb29648227e/88db0411-a080-4594-8d0e-748b491508cc"
+					(reference "U6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 152.4 67.31 0)
 		(unit 1)
@@ -5034,6 +5347,15 @@
 			)
 		)
 		(property "Manufacturer" "TDK"
+			(at 152.4 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey" "445-5968-1-ND"
 			(at 152.4 67.31 0)
 			(effects
 				(font
@@ -5260,6 +5582,15 @@
 			)
 		)
 		(property "Manufacturer" "TDK"
+			(at 165.1 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey" "445-5968-1-ND"
 			(at 165.1 67.31 0)
 			(effects
 				(font
